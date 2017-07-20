@@ -1,4 +1,4 @@
-# it's just a try 
+# it's just a try to get better run time 
 from __future__ import division
 import re
 import math
@@ -12,7 +12,7 @@ def doc_string(doc_x, doc_y):
 
 	magnitude_x = get_magnitude(count_dict.values(),0)
 	magnitude_y = get_magnitude(count_dict.values(),1)
-		
+
 	product = sum(v[0]*v[1] for v in count_dict.values() if len(v) == 2 )/ (magnitude_x * magnitude_y)
 	print product 
 	print math.acos(product)*(180/math.pi)
