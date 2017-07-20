@@ -14,8 +14,8 @@ def doc_string(doc_x, doc_y):
 	magnitude_y = get_magnitude(count_dict.values(),1)
 
 	product = sum(v[0]*v[1] for v in count_dict.values() if len(v) == 2 )/ (magnitude_x * magnitude_y)
-	print product 
-	print math.acos(product)*(180/math.pi)
+	# print product 
+	return  math.acos(product)*(180/math.pi)
 
 def count_string(doc, level,dict_doc=dict()):
 	for i in doc:
